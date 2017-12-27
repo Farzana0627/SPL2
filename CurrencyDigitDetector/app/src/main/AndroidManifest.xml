@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iit.du.currencydigitdetector">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Resister" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".Home" />
+        <activity android:name=".SelectMode" />
+        <activity android:name=".SingleMode" />
+        <activity android:name=".MultiMode" />
+        <activity android:name=".FromTextToVoice" />
+        <activity android:name=".Capture" />
+        <activity android:name=".detection.DigitDetectorActivity" />
+        <activity android:name=".SaveAmount" />
+        <activity android:name=".Search" />
+        <activity android:name=".ReturnedMultiMode" />
+        <activity android:name=".detection.TotalAmount"></activity>
+    </application>
+
+</manifest>
